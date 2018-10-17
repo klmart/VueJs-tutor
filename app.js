@@ -1,13 +1,8 @@
 new Vue({
-  el:   "#app",
+  el: "#app",
   data: {
-    name: 'klmart',
-    job:  'Front-end developer'
-  },
-
-  methods: {
-    greet: function () {
-      return 'Hello me name is ' + this.name
-    }
+    link: 'http://www.example.com',
+    markup: '<a href="http://www.example.com">Link</a>',
+    name: 'jack'
   }
 })
