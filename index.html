@@ -10,18 +10,25 @@
 <body>
 
   <div id="app">
-    <h2>{{counter}}</h2>
-    <button @click="counter++">+1</button>
-    <button @click.prevent.self="substract">-1</button>
-    <button @dblclick="reset">Reset</button>
+    <label>Name:</label>
+    <input type="text" @keyup="changeName">
+
+    <label>Second Name:</label>
+    <input type="text" @keyup.113="changeName">
   </div>
+
+  <!-- list of keyboard code  -->
   <!--
-  .stop
-  .prevent
-  .capture
-  .self
-  .once
-  .passive
+   .enter
+   .tab
+   .delete
+   .escape
+   .space
+   .up
+   .dowm
+   .right
+   .left
+
 -->
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>

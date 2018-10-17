@@ -4,12 +4,15 @@ new Vue({
     counter: 0
   },
 
+  config {
+    keyCodes: {
+      f2: 113
+    }
+  }
+
   methods: {
-    substract: function() {
-      this.counter--
-    },
-    reset: function() {
-      this.counter = 0
+    changeName: function() {
+      console.log('name is changed!');
     }
   }
 })
