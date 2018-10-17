@@ -12,9 +12,17 @@
   <div id="app">
     <h2>{{counter}}</h2>
     <button @click="counter++">+1</button>
-    <button @click="substract">-1</button>
+    <button @click.prevent.self="substract">-1</button>
     <button @dblclick="reset">Reset</button>
   </div>
+  <!--
+  .stop
+  .prevent
+  .capture
+  .self
+  .once
+  .passive
+-->
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
   <script src="app.js"></script>
