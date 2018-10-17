@@ -1,18 +1,11 @@
 new Vue({
   el: "#app",
   data: {
-    counter: 0
+    name: '',
+    checked: false
   },
 
-  config {
-    keyCodes: {
-      f2: 113
-    }
-  }
+  config: {},
 
-  methods: {
-    changeName: function() {
-      console.log('name is changed!');
-    }
-  }
+  methods: {}
 })
