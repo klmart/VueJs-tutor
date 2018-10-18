@@ -10,14 +10,11 @@
 <body>
 
   <div id="app">
-    <button @click="a++">Add to A</button>
-    <button @click="b++">Add to B</button>
-    <p>A - {{a}}</p>
-    <p>B - {{b}}</p>
-
-    <p>Age + A - {{addToA}}</p>
-    <p>Age + B - {{addToB}}</p>
-
+    <button @click="error = !error">Toggle </button>
+    <button @click="success = !success">Add to B</button>
+    <p v-if="error">Here you can see error message!</p>
+    <p v-else="error">Default message!</p>
+    <p v-show="success">Here you can see error message!</p>
   </div>
 
 
