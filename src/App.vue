@@ -1,13 +1,16 @@
 <template>
   <div id="app">
     <h1>{{title}}</h1>
-    <List> </List>
+    <List></List>
   </div>
 </template>
 
 <script>
 
+  import List from './components/List';
+
   export default {
+    components: {'List': List},
     data() {
       return {
         title: 'My application'
