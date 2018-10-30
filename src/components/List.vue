@@ -1,8 +1,9 @@
 <template>
-  <div id="app">
-    <h1>{{title}}</h1>
-    <List> </List>
-  </div>
+  <ul>
+    <li v-for="person in people">
+        {{person}}
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -10,7 +11,7 @@
   export default {
     data() {
       return {
-        title: 'My application'
+        people: ['Max', 'Jack', 'Loe']
       }
     }
   }
