@@ -1,9 +1,12 @@
 <template>
-  <ul>
-    <li v-for="person in people">
+  <div>
+    <h2>Inner title</h2>
+    <ul>
+      <li v-for="person in people">
         {{person}}
-    </li>
-  </ul>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -17,6 +20,8 @@
   }
 </script>
 
-<style>
-
+<style scoped>
+  h2 {
+    color: red;
+  }
 </style>
