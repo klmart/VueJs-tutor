@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <h2>Outer title</h2>
-    <List/>
+    <List :people="people"/>
   </div>
 </template>
 
@@ -22,7 +21,5 @@
 </script>
 
 <style scoped>
-  h2 {
-    color: yellow;
-  }
+
 </style>
