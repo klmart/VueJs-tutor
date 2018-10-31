@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <List :people="people"/>
+    <List :people="people" @message1="displayMessage"/>
   </div>
 </template>
 
@@ -15,6 +15,11 @@
     data() {
       return {
         people: ['Max', 'Jack', 'Leo'],
+      }
+    },
+    methods: {
+      displayMessage: function (message) {
+        this.people.push(message)
       }
     }
   }
