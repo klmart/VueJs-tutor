@@ -11,6 +11,7 @@
 </template>
 
 <script>
+  import {bus} from '../main'
 
   export default {
     props:   {
@@ -28,7 +29,8 @@
     methods: {
       saveMessage: function () {
         //console.log(this.message);
-        this.$emit('message1', this.message)
+        bus.$emit('message1', this.message);
+        this.message = '';
       }
     }
   }
