@@ -74,7 +74,7 @@
           title:      '',
           text:       '',
           categories: [],
-          author: ''
+          author:     ''
         },
         authors: ['Jack', 'Max', 'Leo'],
       }
